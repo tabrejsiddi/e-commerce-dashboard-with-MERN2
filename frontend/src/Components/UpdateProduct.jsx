@@ -39,7 +39,7 @@ const UpdateProduct = () => {
     });
     result = await result.json();
     console.log(result);
-    navigate("/home");
+    navigate("/");
   };
 
   return (

@@ -19,7 +19,7 @@ const Nav = () => {
          </div>
           {  auth ? <ul className = "nav-ul ">
 
-              <li> <Link to ="/home">Product</Link></li>
+              <li> <Link to ="/">Product</Link></li>
               <li> <Link to ="/add">Add Product</Link></li>
               <li> <Link to ="/update">Update Product</Link></li>
               <li> <Link to ="/profile">Profile</Link></li>

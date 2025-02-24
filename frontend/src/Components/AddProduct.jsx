@@ -29,7 +29,7 @@ const AddProduct = () => {
     result = await result.json();
     console.log(result);
     if (result) {
-      navigate("/home");
+      navigate("/");
     }
   };
 

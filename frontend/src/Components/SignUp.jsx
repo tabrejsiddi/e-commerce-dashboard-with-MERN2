@@ -11,7 +11,7 @@ export const SignUp = () => {
   useEffect(() => {
     const auth = localStorage.getItem("user");
     if (auth) {
-      navigate("/home");
+      navigate("/");
     }
   },[navigate]);
 
@@ -33,7 +33,7 @@ export const SignUp = () => {
     localStorage.setItem("token", JSON.stringify(result.auth));
 
     // redirect to home page
-    navigate("/home");
+    navigate("/");
   };
   return (
     <div className="Register">
