@@ -9,12 +9,12 @@ const Login = () => {
   useEffect(() => {
     const auth = localStorage.getItem("user");
     if (auth) {
-      navigate("/home");
+      navigate("/");
     }
   }, []);
   const handleLogin = async () => {
     console.log(email, password);
-    let result = await fetch(`${window.location.origin}/login`, {
+    let result = await fetch(`${window.location.origin}`, {
       method: "POST",
       body: JSON.stringify({ email, password }),
       headers: {
